@@ -148,7 +148,7 @@ img.Q {
 
 #ageCheck {
     width: 15rem;
-    height: 20rem;
+    height: 23rem;
     position: fixed;
     z-index: 999;
     top: 50%;
@@ -229,6 +229,7 @@ p.introduction_B {
 
 p.introduction {
     margin-right: 2rem;
+    line-height: 1.2rem;
     font-family: 'cwTeXFangSong', serif;
     font-size: 0.95rem;
     color: #a0736d;
