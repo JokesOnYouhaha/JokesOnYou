@@ -1,0 +1,206 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
+@import url(https://fonts.googleapis.com/css2?family=Satisfy&display=swap);
+
+html {
+    min-width: 1200px;
+    overflow-x: scroll;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    background-color: #f7e0cd;
+}
+
+div.center {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+img.title1 {
+    width: 10rem;
+    object-fit: cover;
+}
+
+#navbar {
+    width: 15rem;
+    height: 80vh;
+    top: 10vh;
+    z-index: 999;
+    position: sticky;
+    background: #d69992;
+}
+
+#navbar_title {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 2rem;
+    font-family: 'Satisfy', cursive;
+    font-size: 2.3rem;
+    color: #f7e0cd;
+}
+
+button.navbarButton {
+    width: 15rem;
+    height: 3rem;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: 'cwTeXFangSong', serif;
+    font-size: 1.5rem;
+    color: #f7e0cd;
+}
+
+#Qplace {
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+img.Q {
+    height: 20rem;
+    object-fit: cover;
+}
+
+#content {
+    width: 60rem;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+#contentMask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+}
+
+#ageCheck {
+    width: 30rem;
+    height: 15rem;
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fbf0e6;
+    box-shadow: 2px 2px 4px 0 rgba(160, 115, 109, 0.5);
+}
+
+span.hide {
+    display: none;
+}
+
+#ageButton1 {
+    display: flex;
+    justify-content: center;
+}
+
+#ageButton2 {
+    display: none;
+}
+
+#ageButton3 {
+    display: none;
+}
+
+button.check {
+    height: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    background: #fbf0e6;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #d69992;
+    color: #a0736d;
+    font-family: 'cwTeXFangSong', serif;
+    font-size: 1.1rem;
+}
+
+button.check:hover {
+    background: #d69992;
+    color: #f7e0cd;
+}
+
+#profile {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+    border: 2px solid;
+    border-color: #d69992;
+    margin-left: 5rem;
+    margin-right: 50rem;
+    margin-bottom: 3rem;
+    overflow: hidden;
+    float: left;
+}
+
+#profilePhoto {
+    width: 10rem;
+    height: auto;
+    object-fit: cover;
+    background: #ffffff;
+}
+
+#button4 {
+    display: none;
+}
+
+#character {
+    display: none;
+}
+
+img.title2 {
+    width: 30rem;
+    margin-left: -1rem;
+}
+
+div.basic {
+    margin-left: 6rem;
+}
+
+#tem1 {
+    padding-top: 2rem;
+}
+
+p.introduction_B {
+    font-family: 'cwTeXFangSong', serif;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #a0736d;
+}
+
+p.introduction {
+    font-family: 'cwTeXFangSong', serif;
+    font-size: 1.2rem;
+    color: #a0736d;
+}
+
+a.link {
+    text-decoration: none;
+    font-family: 'cwTeXFangSong', serif;
+    font-size: 1.2rem;
+    color: #d69992;
+}
+
+a.link:hover {
+    text-decoration: underline;
+    color: #a0736d;
+}
+
+img.photo {
+    height: 15rem;
+    object-fit: cover;
+    background: #ffffff;
+}

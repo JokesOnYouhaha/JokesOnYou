@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+
+    <title>
+        算你倒楣我就喜歡這樣玩
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="index_PC.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="index_M.css">
+    <link rel="shortcut icon" href="算你倒楣.ico">
+
+    <script>
+
+        var count = 0;
+
+        function show_character() {
+            if (count == 0) {
+                document.getElementById("character").style.display = 'block';
+                count = 1;
+                document.getElementById("button4").style.background = '#f7e0cd';
+                document.getElementById("button4").style.color = '#d69992';
+                document.getElementById("button1").style.background = 'none';
+                document.getElementById("button1").style.color = '#f7e0cd';
+
+                document.addEventListener('click', handleClickOutside);
+            } else {
+                document.getElementById("character").style.display = 'none';
+                count = 0;
+                document.getElementById("button4").style.background = 'none';
+                document.getElementById("button4").style.color = '#f7e0cd';
+                document.getElementById("button1").style.background = '#f7e0cd';
+                document.getElementById("button1").style.color = '#d69992';
+
+                document.removeEventListener('click', handleClickOutside);
+            }
+        }
+
+        function handleClickOutside(event) {
+            var part = document.getElementById("character");
+            var show = document.getElementById("button4");
+
+            if (!part.contains(event.target) && !show.contains(event.target)) {
+                document.getElementById("character").style.display = 'none';
+                count = 0;
+                document.getElementById("button4").style.background = 'none';
+                document.getElementById("button4").style.color = '#f7e0cd';
+                document.getElementById("button1").style.background = '#f7e0cd';
+                document.getElementById("button1").style.color = '#d69992';
+
+                document.removeEventListener('click', handleClickOutside);
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="navbar">
+
+        <div class="center">
+            <img class="title1" src="算你倒楣我就喜歡這樣玩.png">
+        </div>
+
+        <button id="button1" class="navbarButton" style="background-color: #f7e0cd; color: #d69992;">關於</button>
+        <button id="button2" class="navbarButton" onclick="window.location.href='正文.html'">正文</button>
+        <button id="button3" class="navbarButton" onclick="window.location.href='設定.html'">設定</button>
+        <button id="button4" class="navbarButton" onclick="show_character()">人物</button>
+        <button id="button5" class="navbarButton" onclick="window.location.href='沈歸.html'">沈歸</button>
+        <button id="button6" class="navbarButton" onclick="window.location.href='林居.html'">林居</button>
+        <button id="button7" class="navbarButton" onclick="window.location.href='沈獨.html'">沈獨</button>
+        <button id="button8" class="navbarButton" onclick="window.location.href='江煙.html'">江煙</button>
+        <button id="button9" class="navbarButton" onclick="window.location.href='陸然.html'">陸然</button>
+        <button id="button10" class="navbarButton" onclick="window.location.href='江湮.html'">江湮</button>
+        <button id="button11" class="navbarButton" onclick="window.location.href='秦安.html'">秦安</button>
+
+    </div>
+
+    <div id="character">
+
+        <button id="button12" class="characterButton" onclick="window.location.href='沈歸.html'">沈歸</button>
+        <button id="button13" class="characterButton" onclick="window.location.href='林居.html'">林居</button>
+        <button id="button14" class="characterButton" onclick="window.location.href='沈獨.html'">沈獨</button>
+        <button id="button15" class="characterButton" onclick="window.location.href='江煙.html'">江煙</button>
+        <button id="button16" class="characterButton" onclick="window.location.href='陸然.html'">陸然</button>
+        <button id="button17" class="characterButton" onclick="window.location.href='江湮.html'">江湮</button>
+        <button id="button18" class="characterButton" onclick="window.location.href='秦安.html'">秦安</button>
+
+    </div>
+
+    <div id="content">
+
+        <div class="basic" id="tem1">
+            <img class="title2" src="書名.png">
+            <p class="introduction_B">關於本文｜</p>
+            <p class="introduction">
+                耽美、骨科、ABO
+                <br>
+                <br>
+                3P（2男A、1男A改造男O）
+                <br>
+                AO（女A男O）
+                <br>
+                AO（男A女O）
+            </p>
+            <p class="introduction_B">基礎設定｜</p>
+            <p class="introduction">
+                現代背景ABO世界觀
+            </p>
+            <p class="introduction_B">我流詳細｜</p>
+            <p class="introduction">
+                Omega發情期
+                <br>
+                Alpha易感其、被動發情
+                <br>
+                <br>
+                待增
+            </p>
+            <p class="introduction_B">本文背景｜</p>
+            <img class="photo" src="靈感.jpg">
+            <p class="introduction">
+                靈感來自現友傳給我的這張圖
+                <br>
+                本來是手癢摸魚稿子
+                <br>
+                結果逐漸不受控制的膨脹
+            </p>
+            <p class="introduction_B">可能出現｜</p>
+            <p class="introduction">
+                我ooc我自己的設定
+                <br>
+                反正常生理構造內容
+                <br>
+                半睡半醒間亂寫一通
+                <br>
+                忘記自己前面寫過什麼
+                <br>
+                錯字錯到看不出來是什麼
+                <br>
+                沒什麼主線我只是想要寫車
+                <br>
+                <br>
+                <a class="link" href="正文.html">(閱讀正文……)</a>
+            </p>
+            <p class="introduction_B">關於作者｜</p>
+            <p class="introduction">
+                我是<a class="link" href="https://hanshan-0204.github.io/HANSHAN/" target="_blank">寒山</a>
+                <br>
+                一個不是被專題綁架
+                <br>
+                就是在趕稿
+                <br>
+                不是在趕稿
+                <br>
+                就是在裝死的
+                <br>
+                升大三資工系肥宅
+                <br>
+                <br>
+                日常寫點車
+                <br>
+                偶爾寫點字
+                <br>
+                大部分時間都在耍廢和講幹話
+                <br>
+                <br>
+                脾氣很好不會咬人
+                <br>
+                本質是個沙雕
+                <br>
+                沒有什麼雷點
+            </p>
+            <p class="introduction_B">關於本頁｜</p>
+            <p class="introduction">
+                電腦板頁面鼠標顯示繪師繪名
+                <br>
+                手機板頁面長按顯示繪師繪名
+                <br>
+                <br>
+                點擊圖片跳轉繪師連結
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

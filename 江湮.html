@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+
+    <title>
+        江湮
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="index_PC.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="index_M.css">
+    <link rel="shortcut icon" href="算你倒楣.ico">
+
+    <script>
+
+        var count = 0;
+
+        function show_character() {
+            if (count == 0) {
+                document.getElementById("character").style.display = 'block';
+                count = 1;
+                document.getElementById("button4").style.background = '#f7e0cd';
+                document.getElementById("button4").style.color = '#d69992';
+
+                document.addEventListener('click', handleClickOutside);
+            } else {
+                document.getElementById("character").style.display = 'none';
+                count = 0;
+                document.getElementById("button4").style.background = 'none';
+                document.getElementById("button4").style.color = '#f7e0cd';
+
+                document.removeEventListener('click', handleClickOutside);
+            }
+        }
+
+        function handleClickOutside(event) {
+            var part = document.getElementById("character");
+            var show = document.getElementById("button4");
+
+            if (!part.contains(event.target) && !show.contains(event.target)) {
+                document.getElementById("character").style.display = 'none';
+                count = 0;
+                document.getElementById("button4").style.background = 'none';
+                document.getElementById("button4").style.color = '#f7e0cd';
+
+                document.removeEventListener('click', handleClickOutside);
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="navbar">
+
+        <div class="center">
+            <img class="title1" src="算你倒楣我就喜歡這樣玩.png">
+        </div>
+
+        <button id="button1" class="navbarButton" onclick="window.location.href='index.html'">關於</button>
+        <button id="button2" class="navbarButton" onclick="window.location.href='正文.html'">正文</button>
+        <button id="button3" class="navbarButton" onclick="window.location.href='設定.html'">設定</button>
+        <button id="button4" class="navbarButton" onclick="show_character()">人物</button>
+        <button id="button5" class="navbarButton" onclick="window.location.href='沈獨.html'">沈歸</button>
+        <button id="button6" class="navbarButton" onclick="window.location.href='林居.html'">林居</button>
+        <button id="button7" class="navbarButton" onclick="window.location.href='沈獨.html'">沈獨</button>
+        <button id="button8" class="navbarButton" onclick="window.location.href='江煙.html'">江煙</button>
+        <button id="button9" class="navbarButton" onclick="window.location.href='陸然.html'">陸然</button>
+        <button id="button10" class="navbarButton" style="background-color: #f7e0cd; color: #d69992;">江湮</button>
+        <button id="button11" class="navbarButton" onclick="window.location.href='秦安.html'">秦安</button>
+
+    </div>
+
+    <div id="character">
+
+        <button id="button12" class="characterButton" onclick="window.location.href='沈歸.html'">沈歸</button>
+        <button id="button13" class="characterButton" onclick="window.location.href='林居.html'">林居</button>
+        <button id="button14" class="characterButton" onclick="window.location.href='沈獨.html'">沈獨</button>
+        <button id="button15" class="characterButton" onclick="window.location.href='江煙.html'">江煙</button>
+        <button id="button16" class="characterButton" onclick="window.location.href='陸然.html'">陸然</button>
+        <button id="button17" class="characterButton" onclick="window.location.href='江湮.html'">江湮</button>
+        <button id="button18" class="characterButton" onclick="window.location.href='秦安.html'">秦安</button>
+
+    </div>
+
+    <div id="Qplace">
+        <a style="color: #f7e0cd;" href="https://www.facebook.com/profile.php?id=100027345802412" target="_blank">
+            <img class="Q" src="單人委託/浮動_江湮_玥雪.png" title="🎨 玥雪">
+        </a>
+    </div>
+
+    <div id="content">
+
+        <div id="profile">
+            <a style="color: #f7e0cd;" href="https://www.neka.cc/composer/12156" target="_blank">
+                <img id="profilePhoto" src="單人捏娃/江湮成年_neka12156.png" title="🎨 neka 佩牌泥頭車">
+            </a>
+        </div>
+        <div class="basic" id="tem1">
+            <p class="introduction_B">關於江湮｜</p>
+            <p class="introduction">
+                姓名 江湮
+                <br>
+                職業 明星
+                <br>
+                性別 女 Omega
+                <br>
+                身高 163cm→169cm
+                <br>
+                特徵 灰色頭髮、灰瞳、眼尾下垂（職業因素成年江煙可以任意造型）
+            </p>
+            <p class="introduction_B">背景設定｜</p>
+            <p class="introduction">
+
+            </p>
+            <p class="introduction_B">江湮紙娃｜</p>
+            <p class="introduction">少女時期</p>
+            <a style="color: #f7e0cd;" href="https://www.neka.cc/composer/12943" target="_blank">
+                <img class="photo" src="單人捏娃/江湮少女_neka12943.png" title="🎨 neka 千臨臨">
+            </a>
+            <a style="color: #f7e0cd;" href="https://www.neka.cc/composer/11350" target="_blank">
+                <img class="photo" src="單人捏娃/江湮少女_neka11350.png" title="🎨 neka 華月宣敘調">
+            </a>
+            <p class="introduction">成年時期</p>
+            <a style="color: #f7e0cd;" href="https://www.neka.cc/composer/12943" target="_blank">
+                <img class="photo" src="單人捏娃/江湮成年_neka12943.png" title="🎨 neka 千臨臨">
+            </a>
+            <a style="color: #f7e0cd;" href="https://www.neka.cc/composer/12156" target="_blank">
+                <img class="photo" src="單人捏娃/江湮成年_neka12156.png" title="🎨 neka 佩牌泥頭車">
+            </a>
+            <p class="introduction_B">江湮委託｜</p>
+            <a style="color: #f7e0cd;" href="https://www.facebook.com/profile.php?id=100089067355107" target="_blank">
+                <img class="photo" src="單人委託/江湮_阿顏.png" title="🎨 阿顏">
+            </a>
+            <a style="color: #f7e0cd;" href="https://www.facebook.com/profile.php?id=100027345802412" target="_blank">
+                <img class="photo" src="單人委託/江湮_玥雪.jpg" title="🎨 玥雪">
+            </a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

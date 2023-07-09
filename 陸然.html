@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+
+    <title>
+        陸然
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="index_PC.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="index_M.css">
+    <link rel="shortcut icon" href="算你倒楣.ico">
+
+    <script>
+
+        var count = 0;
+
+        function show_character() {
+            if (count == 0) {
+                document.getElementById("character").style.display = 'block';
+                count = 1;
+                document.getElementById("button4").style.background = '#f7e0cd';
+                document.getElementById("button4").style.color = '#d69992';
+
+                document.addEventListener('click', handleClickOutside);
+            } else {
+                document.getElementById("character").style.display = 'none';
+                count = 0;
+                document.getElementById("button4").style.background = 'none';
+                document.getElementById("button4").style.color = '#f7e0cd';
+
+                document.removeEventListener('click', handleClickOutside);
+            }
+        }
+
+        function handleClickOutside(event) {
+            var part = document.getElementById("character");
+            var show = document.getElementById("button4");
+
+            if (!part.contains(event.target) && !show.contains(event.target)) {
+                document.getElementById("character").style.display = 'none';
+                count = 0;
+                document.getElementById("button4").style.background = 'none';
+                document.getElementById("button4").style.color = '#f7e0cd';
+
+                document.removeEventListener('click', handleClickOutside);
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="navbar">
+
+        <div class="center">
+            <img class="title1" src="算你倒楣我就喜歡這樣玩.png">
+        </div>
+
+        <button id="button1" class="navbarButton" onclick="window.location.href='index.html'">關於</button>
+        <button id="button2" class="navbarButton" onclick="window.location.href='正文.html'">正文</button>
+        <button id="button3" class="navbarButton" onclick="window.location.href='設定.html'">設定</button>
+        <button id="button4" class="navbarButton" onclick="show_character()">人物</button>
+        <button id="button5" class="navbarButton" onclick="window.location.href='沈歸.html'">沈歸</button>
+        <button id="button6" class="navbarButton" onclick="window.location.href='林居.html'">林居</button>
+        <button id="button7" class="navbarButton" onclick="window.location.href='沈獨.html'">沈獨</button>
+        <button id="button8" class="navbarButton" onclick="window.location.href='江煙.html'">江煙</button>
+        <button id="button9" class="navbarButton" style="background-color: #f7e0cd; color: #d69992;">陸然</button>
+        <button id="button10" class="navbarButton" onclick="window.location.href='江湮.html'">江湮</button>
+        <button id="button11" class="navbarButton" onclick="window.location.href='秦安.html'">秦安</button>
+
+    </div>
+
+    <div id="character">
+
+        <button id="button12" class="characterButton" onclick="window.location.href='沈歸.html'">沈歸</button>
+        <button id="button13" class="characterButton" onclick="window.location.href='林居.html'">林居</button>
+        <button id="button14" class="characterButton" onclick="window.location.href='沈獨.html'">沈獨</button>
+        <button id="button15" class="characterButton" onclick="window.location.href='江煙.html'">江煙</button>
+        <button id="button16" class="characterButton" onclick="window.location.href='陸然.html'">陸然</button>
+        <button id="button17" class="characterButton" onclick="window.location.href='江湮.html'">江湮</button>
+        <button id="button18" class="characterButton" onclick="window.location.href='秦安.html'">秦安</button>
+
+    </div>
+
+    <div id="Qplace">
+        <a style="color: #f7e0cd;" href="https://www.facebook.com/profile.php?id=100027345802412" target="_blank">
+            <img class="Q" src="單人委託/浮動_陸然_玥雪.png" title="🎨 玥雪">
+        </a>
+    </div>
+
+    <div id="content">
+
+        <div id="profile">
+            <a style="color: #f7e0cd;" href="https://www.neka.cc/composer/12943" target="_blank">
+                <img id="profilePhoto" src="單人捏娃/陸然少年_校_neka12943.png" title="🎨 neka 千臨臨">
+            </a>
+        </div>
+        <div class="basic" id="tem1">
+            <p class="introduction_B">關於陸然｜</p>
+            <p class="introduction">
+                姓名 陸然
+                <br>
+                職業 家主
+                <br>
+                性別 男 Omega
+                <br>
+                身高 169cm→177cm
+                <br>
+                特徵 黑色頭髮、粉色頭尾、黑瞳、右眼下角淚痣
+            </p>
+            <p class="introduction_B">背景設定｜</p>
+            <p class="introduction">
+                少年時期的陸然，作為家族聯姻工具培養，在家以女性化打扮示人，在學校安靜靦腆，骨子裡帶著自卑。
+                <br>
+                <br>
+                成年之後的陸然，表面上溫婉可人，背地裡手段強硬，女性化的打扮變成迷惑人心的工具，扳倒了異母的哥哥們坐上家主的位置。
+            </p>
+            <p class="introduction_B">陸然紙娃｜</p>
+            <p class="introduction">少年時期</p>
+            <a style="color: #f7e0cd;" href="https://www.neka.cc/composer/12943" target="_blank">
+                <img class="photo" src="單人捏娃/陸然少年_校_neka12943.png" title="🎨 neka 千臨臨">
+            </a>
+            <a style="color: #f7e0cd;" href="https://www.neka.cc/composer/12943" target="_blank">
+                <img class="photo" src="單人捏娃/陸然少年_居_neka12943.png" title="🎨 neka 千臨臨">
+            </a>
+            <p class="introduction">成年時期</p>
+            <a style="color: #f7e0cd;" href="https://www.neka.cc/composer/12943" target="_blank">
+                <img class="photo" src="單人捏娃/陸然成年_常_neka12943.png" title="🎨 neka 千臨臨">
+            </a>
+            <a style="color: #f7e0cd;" href="https://www.neka.cc/composer/12943" target="_blank">
+                <img class="photo" src="單人捏娃/陸然成年_宴_neka12943.png" title="🎨 neka 千臨臨">
+            </a>
+            <p class="introduction_B">陸然委託｜</p>
+            <a style="color: #f7e0cd;" href="https://www.facebook.com/profile.php?id=100056311844858" target="_blank">
+                <img class="photo" src="單人委託/陸然_念知.jpeg" title="🎨 念知">
+            </a>
+            <a style="color: #f7e0cd;" href="https://www.facebook.com/profile.php?id=100052438022167" target="_blank">
+                <img class="photo" src="單人委託/陸然_天羽.png" title="🎨 天羽">
+            </a>
+            <a style="color: #f7e0cd;" href="https://www.facebook.com/profile.php?id=100074261000548" target="_blank">
+                <img class="photo" src="單人委託/陸然_方塊酥.PNG" title="🎨 方塊酥">
+            </a>
+            <a style="color: #f7e0cd;" href="https://www.facebook.com/profile.php?id=100048924673650" target="_blank">
+                <img class="photo" src="單人委託/陸然貓貓_忲子_1.jpg" title="🎨 忲子">
+            </a>
+            <a style="color: #f7e0cd;" href="https://www.facebook.com/profile.php?id=100048924673650" target="_blank">
+                <img class="photo" src="單人委託/陸然貓貓_忲子_2.jpg" title="🎨 忲子">
+            </a>
+            <a style="color: #f7e0cd;" href="https://www.facebook.com/profile.php?id=100048924673650" target="_blank">
+                <img class="photo" src="單人委託/陸然貓貓_忲子_3.jpg" title="🎨 忲子">
+            </a>
+            <a style="color: #f7e0cd;" href="https://www.facebook.com/profile.php?id=100089067355107" target="_blank">
+                <img class="photo" src="單人委託/陸然_阿顏.png" title="🎨 阿顏">
+            </a>
+            <a style="color: #f7e0cd;" href="https://www.facebook.com/profile.php?id=100027345802412" target="_blank">
+                <img class="photo" src="單人委託/陸然_玥雪.png" title="🎨 玥雪">
+            </a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

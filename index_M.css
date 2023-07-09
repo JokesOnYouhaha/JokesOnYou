@@ -1,0 +1,253 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
+@import url(https://fonts.googleapis.com/css2?family=Satisfy&display=swap);
+
+html {
+    min-width: 300px;
+    overflow-x: scroll;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7e0cd;
+}
+
+div.center {
+    display: flex;
+    justify-content: center;
+}
+
+img.title1 {
+    width: 7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    object-fit: cover;
+}
+
+#navbar {
+    width: 100%;
+    height: 2.2rem;
+    display: flex;
+    justify-content: left;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    position: fixed;
+    background: #d69992;
+}
+
+#navbar_title {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    line-height: 0.5rem;
+    font-family: 'Satisfy', cursive;
+    font-size: 1rem;
+    color: #f7e0cd;
+}
+
+button.navbarButton {
+    width: 2.5rem;
+    height: 2.2rem;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: 'cwTeXFangSong', serif;
+    font-size: 0.8rem;
+    color: #f7e0cd;
+}
+
+#button5 {
+    display: none;
+}
+
+#button6 {
+    display: none;
+}
+
+#button7 {
+    display: none;
+}
+
+#button8 {
+    display: none;
+}
+
+#button9 {
+    display: none;
+}
+
+#button10 {
+    display: none;
+}
+
+#button11 {
+    display: none;
+}
+
+#character {
+    display: none;
+    width: 15rem;
+    height: 20rem;
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fbf0e6;
+    box-shadow: 2px 2px 4px 0 rgba(160, 115, 109, 0.5);
+}
+
+button.characterButton {
+    width: 100%;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: 'cwTeXFangSong', serif;
+    font-size: 1rem;
+    color: #d69992;
+}
+
+#button12 {
+    margin-top: 1.5rem;
+}
+
+#Qplace {
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+img.Q {
+    height: 13rem;
+    object-fit: cover;
+}
+
+#content {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+#contentMask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+}
+
+#ageCheck {
+    width: 15rem;
+    height: 20rem;
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fbf0e6;
+    box-shadow: 2px 2px 4px 0 rgba(160, 115, 109, 0.5);
+}
+
+#ageButton1 {
+    display: none;
+}
+
+#ageButton2 {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+#ageButton3 {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+button.check {
+    height: 1.5rem;
+    cursor: pointer;
+    background: #fbf0e6;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #d69992;
+    color: #a0736d;
+    font-family: 'cwTeXFangSong', serif;
+    font-size: 0.9rem;
+}
+
+#profile {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 3.5rem;
+    border: 1px solid;
+    border-color: #d69992;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+    overflow: hidden;
+}
+
+#profilePhoto {
+    width: 7rem;
+    height: auto;
+    object-fit: cover;
+    background: #ffffff;
+}
+
+img.title2 {
+    width: 15rem;
+    margin-left: -0.5rem;
+    object-fit: cover;
+}
+
+div.basic {
+    margin-left: 2rem;
+}
+
+#tem1 {
+    padding-top: 2rem;
+}
+
+p.introduction_B {
+    font-family: 'cwTeXFangSong', serif;
+    font-size: 0.95rem;
+    font-weight: bolder;
+    color: #a0736d;
+}
+
+p.introduction {
+    margin-right: 2rem;
+    font-family: 'cwTeXFangSong', serif;
+    font-size: 0.95rem;
+    color: #a0736d;
+}
+
+a.link {
+    text-decoration: none;
+    font-family: 'cwTeXFangSong', serif;
+    font-size: 0.95rem;
+    color: #d69992;
+}
+
+a.link:hover {
+    text-decoration: underline;
+    color: #a0736d;
+}
+
+img.photo {
+    height: 8rem;
+    object-fit: cover;
+    background: #ffffff;
+}

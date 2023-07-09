@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+
+    <title>
+        設定
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="index_PC.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="index_M.css">
+    <link rel="shortcut icon" href="算你倒楣.ico">
+
+    <script>
+
+        var count = 0;
+
+        function show_character() {
+            if (count == 0) {
+                document.getElementById("character").style.display = 'block';
+                count = 1;
+                document.getElementById("button4").style.background = '#f7e0cd';
+                document.getElementById("button4").style.color = '#d69992';
+                document.getElementById("button3").style.background = 'none';
+                document.getElementById("button3").style.color = '#f7e0cd';
+
+                document.addEventListener('click', handleClickOutside);
+            } else {
+                document.getElementById("character").style.display = 'none';
+                count = 0;
+                document.getElementById("button4").style.background = 'none';
+                document.getElementById("button4").style.color = '#f7e0cd';
+                document.getElementById("button3").style.background = '#f7e0cd';
+                document.getElementById("button3").style.color = '#d69992';
+
+                document.removeEventListener('click', handleClickOutside);
+            }
+        }
+
+        function handleClickOutside(event) {
+            var part = document.getElementById("character");
+            var show = document.getElementById("button4");
+
+            if (!part.contains(event.target) && !show.contains(event.target)) {
+                document.getElementById("character").style.display = 'none';
+                count = 0;
+                document.getElementById("button4").style.background = 'none';
+                document.getElementById("button4").style.color = '#f7e0cd';
+                document.getElementById("button3").style.background = '#f7e0cd';
+                document.getElementById("button3").style.color = '#d69992';
+
+                document.removeEventListener('click', handleClickOutside);
+            }
+        }
+
+        function show_content() {
+            document.getElementById("contentMask").style.display = 'none';
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="navbar">
+
+        <div class="center">
+            <img class="title1" src="算你倒楣我就喜歡這樣玩.png">
+        </div>
+
+        <button id="button1" class="navbarButton" onclick="window.location.href='index.html'">關於</button>
+        <button id="button2" class="navbarButton" onclick="window.location.href='正文.html'">正文</button>
+        <button id="button3" class="navbarButton" style="background-color: #f7e0cd; color: #d69992;">設定</button>
+        <button id="button4" class="navbarButton" onclick="show_character()">人物</button>
+        <button id="button5" class="navbarButton" onclick="window.location.href='沈歸.html'">沈歸</button>
+        <button id="button6" class="navbarButton" onclick="window.location.href='林居.html'">林居</button>
+        <button id="button7" class="navbarButton" onclick="window.location.href='沈獨.html'">沈獨</button>
+        <button id="button8" class="navbarButton" onclick="window.location.href='江煙.html'">江煙</button>
+        <button id="button9" class="navbarButton" onclick="window.location.href='陸然.html'">陸然</button>
+        <button id="button10" class="navbarButton" onclick="window.location.href='江湮.html'">江湮</button>
+        <button id="button11" class="navbarButton" onclick="window.location.href='秦安.html'">秦安</button>
+
+    </div>
+
+    <div id="character">
+
+        <button id="button12" class="characterButton" onclick="window.location.href='沈歸.html'">沈歸</button>
+        <button id="button13" class="characterButton" onclick="window.location.href='林居.html'">林居</button>
+        <button id="button14" class="characterButton" onclick="window.location.href='沈獨.html'">沈獨</button>
+        <button id="button15" class="characterButton" onclick="window.location.href='江煙.html'">江煙</button>
+        <button id="button16" class="characterButton" onclick="window.location.href='陸然.html'">陸然</button>
+        <button id="button17" class="characterButton" onclick="window.location.href='江湮.html'">江湮</button>
+        <button id="button18" class="characterButton" onclick="window.location.href='秦安.html'">秦安</button>
+
+    </div>
+
+    <div id="content">
+
+        <div class="basic" id="tem1">
+            <img class="title2" src="書名.png">
+            <p class="introduction_B">全員｜</p>
+            <a style="color: #f7e0cd;" href="https://hikaku-sitatter.com" target="_blank">
+                <img class="photo" src="全員身高.png" title="全員身高">
+            </a>
+            <p class="introduction_B">本文CP｜</p>
+            <p class="introduction">
+                林居×沈歸×沈獨
+                <br>
+                沒良心學霸×鄰家大哥哥×少根筋狗勾
+                <br>
+                <br>
+                江煙×陸然
+                <br>
+                風流御姐×靦腆美人
+                <br>
+                <br>
+                秦安×江湮
+                <br>
+                斯文敗類×溫柔甜心
+            </p>
+            <p class="introduction_B">林居×沈歸×沈獨｜</p>
+            <p class="introduction">
+                冤種哥哥和糟心弟弟
+                <br>
+                <br>
+                養了兩個弟弟
+                <br>
+                一個是親的
+                <br>
+                一個是鄰居
+                <br>
+                兩個弟弟除了同樣讓人糟心
+                <br>
+                沒有一點共通點
+            </p>
+            <p class="introduction">林居×沈歸</p>
+            <a style="color: #f7e0cd;" href="https://www.facebook.com/profile.php?id=100089447995378" target="_blank">
+                <img class="photo" src="雙人委託/林居×沈歸_艾克斯.png" title="🎨 艾克斯">
+            </a>
+            <p class="introduction_B">江煙×陸然｜</p>
+            <p class="introduction">
+                渣女學姐和純情學弟
+                <br>
+                <br>
+                學弟好乖好可愛
+                <br>
+                信息素聞起來怪好吃的
+                <br>
+                逗一下應該不會怎麼樣吧
+            </p>
+            <a style="color: #f7e0cd;" href="https://www.facebook.com/profile.php?id=100018611883571" target="_blank">
+                <img class="photo" src="雙人委託/江煙×陸然_花嫁.png" title="🎨 花嫁">
+            </a>
+            <a style="color: #f7e0cd;" href="https://www.facebook.com/profile.php?id=100021571030295" target="_blank">
+                <img class="photo" src="雙人委託/江煙×陸然_月凌.jpg" title="🎨 月凌">
+            </a>
+            <a style="color: #f7e0cd;" href="https://www.facebook.com/profile.php?id=100089447995378" target="_blank">
+                <img class="photo" src="雙人委託/江煙×陸然_艾克斯.png" title="🎨 艾克斯">
+            </a>
+            <a style="color: #f7e0cd;" href="https://www.facebook.com/profile.php?id=100053480664353" target="_blank">
+                <img class="photo" src="雙人委託/江煙×陸然_西南風.png" title="🎨 西南風">
+            </a>
+            <p class="introduction_B">秦安×江湮｜</p>
+            <p class="introduction">
+                道德敗壞金主和不諳世事情人
+                <br>
+                <br>
+                今天遭的殃
+                <br>
+                都是昨天幹的壞事業力引爆
+            </p>
+            <p class="introduction_B">兄弟姐妹｜</p>
+            <p class="introduction">
+                沈歸×沈獨
+                <br>
+                溫柔哥哥×陽光弟弟
+                <br>
+                <br>
+                江煙×江湮
+                <br>
+                護短姐姐×姐控妹妹
+            </p>
+            <p class="introduction_B">沈歸×沈獨｜</p>
+            <p class="introduction">
+
+            </p>
+            <p class="introduction_B">江煙×江湮｜</p>
+            <a style="color: #f7e0cd;" href="https://www.facebook.com/profile.php?id=100027345802412" target="_blank">
+                <img class="photo" src="雙人委託/江煙×江湮_玥雪.png" title="🎨 玥雪">
+            </a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
