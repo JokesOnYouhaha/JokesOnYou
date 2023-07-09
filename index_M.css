@@ -214,6 +214,7 @@ img.title2 {
 
 div.basic {
     margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 #tem1 {
@@ -228,7 +229,6 @@ p.introduction_B {
 }
 
 p.introduction {
-    margin-right: 2rem;
     line-height: 1.2rem;
     font-family: 'cwTeXFangSong', serif;
     font-size: 0.95rem;
