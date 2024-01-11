@@ -161,6 +161,10 @@ button.check:hover {
     display: none;
 }
 
+button.characterButton {
+    display: none;
+}
+
 img.title2 {
     width: 30rem;
     margin-left: -1rem;
